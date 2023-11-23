@@ -4,52 +4,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Gotham City</title>
-    <link href="styles\style.css" rel="stylesheet" type="text/css" />
+    <title>Procurar Indivíduos Notórios</title>
+    <link href="styles\style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/icons/bat-logo.png">
   </head>
 
   <body class="terminated caps large">
     <main>
-        <table class = "search">
+        <table class = "search" id="deleta-essa-merda-3">
             <tr class="top-or-bottom">
-                <td class="border-right"></td>
-                <td class="border-right"></td>
                 <td></td>
-                <td class="final-col-credits center small"><a class="goback gobackcredits" href="./villainsMenu.html" onmouseover="mouseOver('goback')" onmouseout="mouseOut('goback', true)">VOLTAR</a></td>
+                <td></td>
+                <td></td>
+                <td class="final-col-credits center small">
+                    <a class="goback gobackcredits" id="deleta-essa-merda" href="./villainsMenu.html" onmouseover="mouseOver('goback')" onmouseout="mouseOut('goback', true)">VOLTAR</a>
+                </td>
 
-            </tr>
-            <tr class="gap">
-                <td class="border-right"></td>
-                <td class="border-right"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>         
-            <tr class ="menu">
-                <td class="blank border-right"></td>
-                <td class="logo border-right center set1">
-                    <div class="label">SEARCH</div>
+            </tr>   
+            <tr class ="menu" id="menu">
+                <td class="blank"></td>
+                <td class="logo center set1">
+                    <div class="label">BUSCAR</div>
                 </td>                
                 <td class="left set1">
-                    <input type="text-search" autocomplete="off" id="search-field" name="search-field"
-                    maxlength="27" value="">
+                    <form id="search-form">
+                        <input type="text-search" autocomplete="off" id="search-field" name="search-field" maxlength="27" value="">
+                    </form>
                 </td>
                 <td></td>
             </tr>
-            <tr class="gap">
-                <td class="border-right"></td>
-                <td class="border-right"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
             <tr class="top-or-bottom">
-                <td class="border-right"></td>
-                <td class="border-right"></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
             </tr>
         </table>
+        <div id="table-buceta">
+        </div>
     </main>
     
     <script src="script\script.js"></script>

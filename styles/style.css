@@ -244,6 +244,7 @@ a {
 
 .menu {
   background-color: #D5FDFF;
+  transition: transform 0.5s ease-in-out;
 }
 
 .blank {
@@ -288,7 +289,6 @@ a {
 .next {
   display: inline-block;
   padding: 1.2em 2em 1em 2em;
-  background-color: #7EB6B7;
 }
 
 .previous {
@@ -344,4 +344,43 @@ a {
 .msg{
   -webkit-font-smoothing: antialiased;
   font-family: Eurostile;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Visible state */
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.move-right {
+  transform: translateX(100px);
+}
+
+p {
+  text-align: justify;
+  color: rgb(231, 231, 231);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;     
+  background-color: #1d2929;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+
+}
+
+.flex-container > div{
+  background: linear-gradient(to bottom right, #202424, #3b5657);
+  background-repeat: repeat;
+  border: 2px solid #D5FDFF;
+  padding: 8px;
+  flex-direction: column;
 }
